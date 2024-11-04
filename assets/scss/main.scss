@@ -1,0 +1,11 @@
+@import "./sections/variables.scss";
+@import "./sections/normalize";
+@import "./sections/mixins";
+
+@import "./components/header";
+@import "./components/banner";
+@import "./components/missions";
+@import "./components/latest";
+@import "./components/authors";
+@import "./components/contact";
+@import "./components/footer";

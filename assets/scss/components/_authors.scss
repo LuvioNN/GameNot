@@ -1,0 +1,24 @@
+.authors {
+	padding: 200px 0px;
+}
+.authors__content {
+	@include flex(center, center);
+	flex-direction: column;
+	gap: 30px;
+	color: $primary-color;
+	text-align: center;
+	h3 {
+		@include font-max(unset, 24px);
+	}
+	h2 {
+		@include font-min(500, 16px);
+	}
+	p{
+		@include p-s();
+	}
+	.authors__content--under{
+		gap: 5px;
+		display: flex;
+		justify-content: center;
+	}
+}

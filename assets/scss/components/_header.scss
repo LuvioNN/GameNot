@@ -1,0 +1,58 @@
+.header__wrap {
+	@include flex(center, space-between);
+	padding: 10px 0px;
+	gap: 20px;
+	.header__links {
+		@include flex(flex-start, space-between);
+		gap: 25px;
+		a {
+			font-weight: 600;
+			font-size: 24px;
+			color: $primary-color;
+		}
+	}
+	.header__LogoWithText {
+		@include flex(center, space-between);
+		gap: 50px;
+		a {
+			color: $primary-color;
+		}
+	}
+	@media screen and (max-width: 992px) {
+		.header__links {
+			a {
+				font-size: 22px;
+			}
+		}
+		.header__LogoWithText {
+			width: 40%;
+			height: 40%;
+		}
+	}
+	@media screen and (max-width: 767px) {
+		.header__links {
+			display: none;
+			// a {
+			// 	font-size: 22px;
+			// }
+		}
+		.header__LogoWithText {
+			width: 365px;
+			height: 70px;
+			// margin: 10 aut;
+		}
+	}
+	@media screen and (max-width: 575px) {
+		.header__links {
+			display: none;
+			// a {
+			// 	font-size: 22px;
+			// }
+		}
+		.header__LogoWithText {
+			width: 265px;
+			height: 70px;
+			// margin: 10 aut;
+		}
+	}
+}

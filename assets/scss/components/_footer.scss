@@ -1,0 +1,16 @@
+.footer {
+	background: linear-gradient(270deg, #442788 0%, #461955 51.5%, #66264e 100%);
+	padding: 102px 30px;
+	display: flex;
+	text-align: center;
+	align-items: center;
+	.footer__text {
+		color: $primary-color;
+		@include font-min(500, 20px);
+	}
+	@media screen and (max-width: 900px) {
+		.footer__text {
+			@include font-min(500, 15px);
+		}
+	}
+}
